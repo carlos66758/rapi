@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nosso Cantinho Especial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body><section id="contagem-regressiva">
+    <h2>Contagem Regressiva</h2>
+    <div id="contador">
+        <p id="dias"></p>
+        <p>dias até o grande dia!</p>
+    </div>
+</section>
+
+<script>
+    // Defina a data alvo (substitua com a data desejada)
+    const dataAlvo = new Date("2026-03-31T00:00:00").getTime();
+
+    // Atualiza a contagem regressiva a cada segundo
+    const intervalo = setInterval(function() {
+        const agora = new Date().getTime();
+        const distancia = dataAlvo - agora;
+
+        // Cálculo de dias
+        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+
+        // Exibe o resultado
+        document.getElementById("dias").innerHTML = dias;
+
+        // Se a contagem regressiva terminar
+        if (distancia < 0) {
+            clearInterval(intervalo);
+            document.getElementById("contador").innerHTML = "<p>O grande dia chegou!</p>";
+        }
+    }, 1000);
+</script>
+
+    <header>
+        <div class="container">
+            <h1>Meu Amor</h1>
+            <p>Bem-vinda, minha gatinha!</p>
+           <p><a href="https://web.whatsapp.com/send?phone=5527997571067" target="_blank" class="btn" >zap zap</a></p>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>te adoro em td garota</h2>
+            <p>obrigado por estar comigo!</p>
+            <img src="WhatsApp Image 2024-11-01 at 01.44.06 (1).jpeg" alt="Foto do casal" width="400" height="300">
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="galeria-imagens">
+            <img src="WhatsApp Image 2024-10-31 at 20.16.44 (1).jpeg" alt="Foto 1" width="300" height="300">
+            <img src="WhatsApp Image 2024-11-01 at 01.44.05.jpeg" alt="Foto 2" width="300" height="300">
+            <img src="WhatsApp Image 2024-10-31 at 20.16.44.jpeg" alt="Foto 3" width="300" height="300">
+            <img src="WhatsApp Image 2024-11-01 at 01.44.06.jpeg" alt="Foto 4" width="300" height="300">
+        </div>
+    </section>
+
+    <section id="recados">
+        <h2>PARA A MULHER DA MINHA VIDA</h2>
+        <p>Oi, minha princesa! Sei que as coisas são difíceis, mas não desanime. 
+            Vou sempre estar com você e te apoiar em tudo. Você é meu orgulho, a mulher da minha vida e
+             mãe dos meus filhos. Saiba que nunca vou desistir de você. Te espero o tempo que for 
+             necessário Você é a mulher mais linda do mundo,
+             um sonho pra mim Sou seu fa número 1 garota,
+              fiquei até agora acordado, mo sono kkk</p>
+    </section>
+
+    <footer>
+        <p>✨ O amor é paciente, o amor é bondoso  <p>1 Coríntios 13:4-7✨</p>
+    </footer>
+
+</body>
+</html>
